@@ -73,7 +73,7 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls and also add handy aliases
-# ls also defaults to long form, shows hidden files, and changes file sized to 
+# ls also defaults to long form, shows hidden files, and changes file sizes to 
 # a human-friendly format
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -143,3 +143,7 @@ alias dirs="dirs -v"
 # default editor: vim
 export EDITOR='vim'
 export VISUAL='vim'
+
+# prevents > from overwriting existing files. can be overridden with
+# >|FILENAME 
+shopt -o noclobber
