@@ -77,7 +77,7 @@ esac
 # a human-friendly format
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto -alh'
+    alias ls='ls --color=auto -all --human-readable -l'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -146,4 +146,5 @@ export VISUAL='vim'
 
 # prevents > from overwriting existing files. can be overridden with
 # >|FILENAME 
-shopt -o noclobber
+#got no idea why this doesn't work, sorry guys
+set -o noclobber
