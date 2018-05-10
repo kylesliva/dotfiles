@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 #File name: deploy.sh
 #Summary: Deploys RHEL/CentOS/Ubuntu system with settings customized by Kyle Sliva.
 #                             Meant to be deployed in conjunction with the dotfiles folder.     
