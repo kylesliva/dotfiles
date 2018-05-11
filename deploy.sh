@@ -11,8 +11,12 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 apt-get update
-apt-get install -y git deluge htop virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium tmux unattended-upgrades
 
+#desktop init
+apt-get install -y curl git deluge htop virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser tmux unattended-upgrades
+
+#server init
+#apt-get install -y curl git htop vim tmux unattended-upgrades
 # Check to see if a dotfile exists
 # Back up dotfiles
 # Symlink the enclosed dotfiles
