@@ -133,6 +133,8 @@ if [ -f `which powerline-daemon` ]; then
 fi
 # makes stuff in tmux not look like mud, forces 256 color mode
 alias tmux="TERM=screen-256color-bce tmux"
+alias dev1="ssh kyle@192.168.122.166"
+alias rpi="ssh pi@10.0.0.222"
 
 # binds ':q' to exit
 alias :q="exit"
