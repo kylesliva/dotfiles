@@ -145,7 +145,7 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 # Aliases connection to vm1
-alias vm1="ssh kyle@192.168.122.190"
+alias vm1="ssh kyle@192.168.122.250"
 
 # prevents > from overwriting existing files. can be overridden with
 # >|FILENAME 
