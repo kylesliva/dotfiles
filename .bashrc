@@ -151,3 +151,7 @@ alias vm1="ssh kyle@192.168.122.66"
 # >|FILENAME 
 #got no idea why this doesn't work, sorry guys
 set -o noclobber
+
+#setting the gopath for great good
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
