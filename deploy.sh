@@ -13,7 +13,7 @@ fi
 apt-get update
 
 #desktop init
-apt-get install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser tmux unattended-upgrades
+apt-get install -y curl git htop powerline keepassx vim tmux unattended-upgrades
 
 #server init
 #apt-get install -y curl git htop vim tmux unattended-upgrades
