@@ -151,3 +151,19 @@ alias vm1="ssh kyle@192.168.122.66"
 # >|FILENAME 
 #got no idea why this doesn't work, sorry guys
 set -o noclobber
+
+# Some notes on disabling screen tearing by default (works on Xubuntu 18.04)
+# I used this guide: 
+# https://askubuntu.com/questions/945895/solution-to-intel-graphics-screen-tearing-flickering-causes-excessive-fan-use
+# Created this directory: /etc/X11/xorg.conf.d/20-intel-graphics.conf
+# If dir is causing problems, it should be removable.
+# Added the following:
+# [begin code]
+#		Section "Device"
+#		   Identifier  "Intel Graphics"
+#		   Driver      "intel"
+#		   Option      "TripleBuffer" "true"
+#		   Option      "TearFree"     "true"
+#		   Option      "DRI"          "false"
+#		EndSection
+# [end code]
