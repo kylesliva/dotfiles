@@ -3,6 +3,8 @@
 #Summary: Deploys RHEL/CentOS/Ubuntu system with settings customized by Kyle Sliva.
 #                             Meant to be deployed in conjunction with the dotfiles folder.     
 #                             Copy this to home directory.
+# https://help.ubuntu.com/community/AutomaticSecurityUpdates
+#This is helpful for server deployments!
 
 #run this as root! or nothing will happen
 if [[ $EUID -ne 0 ]]; then
