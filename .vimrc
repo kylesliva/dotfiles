@@ -30,7 +30,15 @@ nmap \p :set paste! paste?<cr>
 set rtp+=/usr/share/powerline/bindings/vim/
 
 " Always show statusline
- set laststatus=2
+set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256
 " colours)
- set t_Co=256
+set t_Co=256
+
+set tabstop=4       " The width of a TAB is set to 4.
+                    " Still it is a \t. It is just that
+                    " Vim will interpret it to be having
+                    " a width of 4.
+set shiftwidth=4    " Indents will have a width of 4.
+set softtabstop=4   " Sets the number of columns for a TAB.
+set expandtab       " Expand TABs to spaces.
