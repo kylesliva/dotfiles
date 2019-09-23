@@ -15,7 +15,11 @@ fi
 apt-get update
 
 #desktop init
+<<<<<<< HEAD
 apt-get install -y curl git deluge htop redshift-gtk powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades
+=======
+apt-get install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades
+>>>>>>> b03575f6723600284c43dcf6abae0f0dfde63598
 
 #server init
 #apt-get install -y curl rsync git htop vim tmux unattended-upgrades
@@ -63,4 +67,3 @@ git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 
 #Installs tmux package manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
