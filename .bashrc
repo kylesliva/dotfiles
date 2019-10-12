@@ -167,3 +167,4 @@ set -o noclobber
 #		   Option      "DRI"          "false"
 #		EndSection
 # [end code]
+# For AMD: https://learnubuntumate.weebly.com/screen-tearing-on-amd-graphics.html
