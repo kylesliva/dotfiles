@@ -9,7 +9,8 @@
 
 
 "relative line numbers
-set rnu
+"*** disabling
+"set rnu
 "shows current number in place of '0'
 set nu
 
