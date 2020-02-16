@@ -15,10 +15,10 @@ fi
 apt-get update
 
 #desktop init
-#apt-get install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser tmux unattended-upgrades
+#apt-get install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser tmux unattended-upgrades jq netcat
 
 #server init
-apt-get install -y curl git htop vim tmux unattended-upgrades update-notifier-common
+apt-get install -y curl git htop vim tmux unattended-upgrades update-notifier-common jq netcat
 # Check to see if a dotfile exists
 # Back up dotfiles
 # Symlink the enclosed dotfiles
