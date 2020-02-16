@@ -54,7 +54,6 @@ then
 fi
 
 
-<<<<<<< HEAD
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -63,5 +62,3 @@ git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 
 #Installs tmux package manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-=======
->>>>>>> 71477ba45a07765f30ae6d2f343f8db859a41f2a
