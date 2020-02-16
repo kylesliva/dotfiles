@@ -14,10 +14,11 @@ fi
 
 apt-get update
 
-#apt-get install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades netcat jq
+#desktop init
+#apt-get install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser tmux unattended-upgrades
 
 #server init
-apt-get install -y curl rsync git htop vim tmux unattended-upgrades powerline python-pip python3-pip netcat jq
+apt-get install -y curl git htop vim tmux unattended-upgrades update-notifier-common
 # Check to see if a dotfile exists
 # Back up dotfiles
 # Symlink the enclosed dotfiles
@@ -52,8 +53,8 @@ then
                 ln -s /home/kyle/dotfiles/.tmux.conf /home/kyle/.tmux.conf
 fi
 
-#Installs Pathogen for vim
 
+<<<<<<< HEAD
 mkdir -p ~/.vim/autoload ~/.vim/bundle && \
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
@@ -62,3 +63,5 @@ git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 
 #Installs tmux package manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+=======
+>>>>>>> 71477ba45a07765f30ae6d2f343f8db859a41f2a

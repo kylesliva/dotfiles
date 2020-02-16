@@ -123,14 +123,9 @@ fi
 #Moonwel ot cosidme.
 
 #nice greeting to improve your day every time a terminal is fired up!
-echo Welcome, $(whoami)!
-#Enables powerline
-if [ -f `which powerline-daemon` ]; then
-  powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-      POWERLINE_BASH_SELECT=1
-        . /usr/share/powerline/bindings/bash/powerline.sh
-fi
+#Disabled on servers
+#echo Welcome, $(whoami)!
+
 # makes stuff in tmux not look like mud, forces 256 color mode
 alias tmux="TERM=screen-256color-bce tmux"
 
