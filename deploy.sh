@@ -12,17 +12,13 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-apt-get update
+apt update
 
 #desktop init
-<<<<<<< HEAD
-apt-get install -y curl git deluge htop redshift-gtk powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades
-=======
-apt-get install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades
->>>>>>> b03575f6723600284c43dcf6abae0f0dfde63598
+apt install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades jq python3-pip powerline ansible python-pip netcat
 
 #server init
-#apt-get install -y curl rsync git htop vim tmux unattended-upgrades
+#apt-get install -y curl rsync git htop vim tmux unattended-upgrades jq python3-pip powerline ansible python-pip netcat
 # Check to see if a dotfile exists
 # Back up dotfiles
 # Symlink the enclosed dotfiles
@@ -56,11 +52,6 @@ if ! [[ -e /home/kyle/.tmux.conf ]]
 then
                 ln -s /home/kyle/dotfiles/.tmux.conf /home/kyle/.tmux.conf
 fi
-
-#Installs Pathogen for vim
-
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 #Installs airline for vim
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline

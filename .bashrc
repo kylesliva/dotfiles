@@ -144,9 +144,6 @@ alias dirs="dirs -v"
 export EDITOR='vim'
 export VISUAL='vim'
 
-# Aliases connection to vm1
-alias vm1="ssh kyle@192.168.122.66"
-
 # prevents > from overwriting existing files. can be overridden with
 # >|FILENAME 
 #got no idea why this doesn't work, sorry guys
