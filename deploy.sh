@@ -15,10 +15,10 @@ fi
 apt update
 
 #desktop init
-apt install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades jq python3-pip powerline ansible python-pip netcat
+apt install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades jq python3-pip powerline ansible python-pip netcat nmap
 
 #server init
-#apt-get install -y curl rsync git htop vim tmux unattended-upgrades jq python3-pip powerline ansible python-pip netcat
+#apt-get install -y curl rsync git htop vim tmux unattended-upgrades jq python3-pip powerline ansible python-pip netcat nmap
 # Check to see if a dotfile exists
 # Back up dotfiles
 # Symlink the enclosed dotfiles
