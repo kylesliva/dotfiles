@@ -53,8 +53,18 @@ then
                 ln -s /home/kyle/dotfiles/.tmux.conf /home/kyle/.tmux.conf
 fi
 
+#install pathogen for vim
+sudo mkdir -p ~/.vim/autoload ~/.vim/bundle
+sudo curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
 #Installs airline for vim
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+
+#install vim fugitive
+sudo mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+sudo git clone https://tpope.io/vim/fugitive.git
+vim -u NONE -c "helptags fugitive/doc" -c q
 
 #Installs tmux package manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
