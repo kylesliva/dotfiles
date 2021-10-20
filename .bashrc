@@ -164,7 +164,7 @@ set -o noclobber
 export PATH=$PATH:$HOME/.local/bin
  
 # Powerline configuration
-if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+if [ -f `which powerline-daemon` ]; then
     /usr/bin/powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
