@@ -124,13 +124,7 @@ fi
 
 #nice greeting to improve your day every time a terminal is fired up!
 echo Welcome, $(whoami)!
-#Enables powerline
-if [ -f `which powerline-daemon` ]; then
-  powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-      POWERLINE_BASH_SELECT=1
-        . /usr/share/powerline/bindings/bash/powerline.sh
-fi
+
 # makes stuff in tmux not look like mud, forces 256 color mode
 alias tmux="TERM=screen-256color-bce tmux"
 
@@ -165,3 +159,14 @@ set -o noclobber
 #		EndSection
 # [end code]
 # For AMD: https://learnubuntumate.weebly.com/screen-tearing-on-amd-graphics.html
+
+# Add this to your PATH if it’s not already declared
+export PATH=$PATH:$HOME/.local/bin
+ 
+# Powerline configuration
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+    /usr/bin/powerline-daemon -q
+    POWERLINE_BASH_CONTINUATION=1
+    POWERLINE_BASH_SELECT=1
+    source /usr/share/powerline/bindings/bash/powerline.sh
+fi
