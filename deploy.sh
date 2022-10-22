@@ -15,7 +15,7 @@ fi
 apt update
 
 #desktop init
-apt install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassx filezilla gparted vim chromium-browser rsync tmux unattended-upgrades jq python3-pip ansible python-pip netcat nmap solaar tcpdump
+apt install -y curl git deluge htop redshift-gtk virt-manager qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils powerline keepassxc filezilla gparted vim chromium-browser rsync tmux unattended-upgrades jq python3-pip ansible python-pip netcat nmap solaar tcpdump
 
 #server init
 #apt-get install -y curl rsync git htop vim tmux unattended-upgrades jq python3-pip powerline ansible python-pip netcat nmap
