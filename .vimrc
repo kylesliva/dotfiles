@@ -20,8 +20,6 @@ set hlsearch
 nmap \q :nohlsearch<CR>
 nmap \p :set paste! paste?<cr>
 
-" powerline link for reinstallation: https://ubuntu-mate.community/t/installing-powerline-as-quickly-as-possible/5381 
-set rtp+=/usr/share/powerline/bindings/vim/
 
 " Always show statusline
 set laststatus=2
@@ -37,5 +35,5 @@ set shiftwidth=4    " Indents will have a width of 4.
 set softtabstop=4   " Sets the number of columns for a TAB.
 set expandtab       " Expand TABs to spaces.
 
-execute pathogen#infect()
+" execute pathogen#infect()
 
